@@ -29,6 +29,7 @@
         <activity android:name=".myTestingLesson.pagger.TestingPagger"/>
         <activity android:name=".myTestingLesson.TestingAppBar"/>
         <receiver android:name=".task1.WifiBroadCastReceiver"/>
+        <activity android:name=".task2.Task2Activity"/>
     </application>
 
 
