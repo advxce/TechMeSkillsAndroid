@@ -19,7 +19,7 @@ class GetUserNameActivity: AppCompatActivity() {
         binding?.let {
             it.tvGetUserName.text = userName
         }
-
+    //testing
     }
 
 }
