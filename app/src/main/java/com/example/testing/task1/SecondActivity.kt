@@ -17,7 +17,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.testing.R
 import com.example.testing.databinding.ActivitySecondBinding
 import com.example.testing.myTestingLesson.MyCustomAdapter
-
+//add this
 class SecondActivity : AppCompatActivity() {
 
     var binding: ActivitySecondBinding? = null
@@ -28,9 +28,9 @@ class SecondActivity : AppCompatActivity() {
         binding = ActivitySecondBinding.inflate(layoutInflater)
         setContentView(binding?.root)
 //        setContentView(R.layout.activity_second)
-        val rootView = layoutInflater.inflate(R.layout.activity_second, null, false) as LinearLayout
-        val parentView = findViewById<ViewGroup>(R.id.sec_activity)
-        ViewCompat.setOnApplyWindowInsetsListener(rootView.rootView) { view, insets ->
+//        val rootView = layoutInflater.inflate(R.layout.activity_second, null, false) as LinearLayout
+//        val parentView = findViewById<ViewGroup>(R.id.sec_activity)
+        ViewCompat.setOnApplyWindowInsetsListener(binding?.root) { view, insets ->
             val statusBar = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             view.setPadding(
                 statusBar.left,

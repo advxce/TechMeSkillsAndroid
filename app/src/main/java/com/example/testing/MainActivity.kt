@@ -1,12 +1,14 @@
 package com.example.testing
 
 
+import android.content.Intent
 import android.os.Bundle
 
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
 import com.example.testing.databinding.ActivityMainBinding
+import com.example.testing.task1.SecondActivity
 import com.google.android.material.tabs.TabLayoutMediator
 
 class MainActivity : AppCompatActivity() {
@@ -27,6 +29,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding?.root)
 
 
+        binding?.let {bId->
+            bId.task1.setOnClickListener {
+                val toTask1Intent = Intent(this, SecondActivity::class.java)
+                startActivity(toTask1Intent)
+            }
+        }
 
 
     }
