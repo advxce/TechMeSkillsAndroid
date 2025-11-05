@@ -33,30 +33,18 @@
 
 <!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->
 
-<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+<LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
 
-    <fragment
-        android:id="@+id/navHost"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:navGraph ="@navigation/navigation"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        />
-
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/task1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/bottomNav"
-        app:layout_constraintBottom_toBottomOf="@+id/navHost"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/menu" />
+        android:text="task1"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

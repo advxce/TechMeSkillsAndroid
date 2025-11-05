@@ -24,7 +24,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".SecondActivity"/>
+        <activity android:name=".task1.SecondActivity"/>
+        <activity android:name=".task1.GetUserNameActivity"/>
+        <activity android:name=".myTestingLesson.pagger.TestingPagger"/>
+        <activity android:name=".myTestingLesson.TestingAppBar"/>
+        <receiver android:name=".task1.WifiBroadCastReceiver"/>
     </application>
 
 
