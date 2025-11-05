@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.testing.databinding.ListItemBinding
-
+//add adapter
 class MyCustomAdapter(val list:List<String>): RecyclerView.Adapter<MyCustomAdapter.CustomViewHolder>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,

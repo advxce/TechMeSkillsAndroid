@@ -23,7 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <!--    add activity -->
         <activity android:name=".task1.SecondActivity"/>
         <activity android:name=".task1.GetUserNameActivity"/>
         <activity android:name=".myTestingLesson.pagger.TestingPagger"/>

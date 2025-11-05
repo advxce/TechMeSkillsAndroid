@@ -17,7 +17,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.testing.R
 import com.example.testing.databinding.ActivitySecondBinding
 import com.example.testing.myTestingLesson.MyCustomAdapter
-//add this
+//add task1
 class SecondActivity : AppCompatActivity() {
 
     var binding: ActivitySecondBinding? = null
