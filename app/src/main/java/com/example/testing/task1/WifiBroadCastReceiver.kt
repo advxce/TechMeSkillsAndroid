@@ -6,6 +6,8 @@ import android.content.Intent
 import android.net.wifi.WifiManager
 import android.widget.Toast
 
+//add broadCastReceiver
+
 class WifiBroadCastReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context?, intent: Intent?) {
         when (intent?.action) {

@@ -3,7 +3,7 @@ package com.example.testing.task1
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.testing.databinding.ActivityGetUserNameBinding
-
+//add userNameActivity
 class GetUserNameActivity: AppCompatActivity() {
 
     var binding: ActivityGetUserNameBinding? = null
