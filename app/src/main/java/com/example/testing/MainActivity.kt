@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 import com.example.testing.databinding.ActivityMainBinding
 import com.example.testing.task1.SecondActivity
+import com.example.testing.task2.Task2Activity
 import com.google.android.material.tabs.TabLayoutMediator
 
 class MainActivity : AppCompatActivity() {
@@ -33,6 +34,11 @@ class MainActivity : AppCompatActivity() {
             bId.task1.setOnClickListener {
                 val toTask1Intent = Intent(this, SecondActivity::class.java)
                 startActivity(toTask1Intent)
+            }
+
+            bId.task2.setOnClickListener {
+                val toTask2Intent = Intent(this, Task2Activity::class.java)
+                startActivity(toTask2Intent)
             }
         }
 

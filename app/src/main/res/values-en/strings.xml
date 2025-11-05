@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Testing</string>
+    <string name="user_name">Dima</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello_with_username">Hello, %s!</string>
+</resources>

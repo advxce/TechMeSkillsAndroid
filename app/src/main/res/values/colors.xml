@@ -7,4 +7,7 @@
     <color name="onPrimary"> #fff</color>
     <color name="background"> #fff</color>
     <color name="onBackground"> #000</color>
+
+    <color name="colorForButton">#6200EE</color>
+    <color name="colorForTextView">#FF5722</color>
 </resources>
