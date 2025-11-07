@@ -23,12 +23,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+<!--task1-->
         <activity android:name=".task1.SecondActivity"/>
         <activity android:name=".task1.GetUserNameActivity"/>
+        <receiver android:name=".task1.WifiBroadCastReceiver"/>
+<!--        testing components-->
         <activity android:name=".myTestingLesson.pagger.TestingPagger"/>
         <activity android:name=".myTestingLesson.TestingAppBar"/>
-        <receiver android:name=".task1.WifiBroadCastReceiver"/>
+<!--task3-->
+        <activity android:name=".task3.Task3Activity"/>
+        <activity android:name=".task3.Task3SecActivity"/>
+<!--        architecture-->
+        <activity android:name=".architectures.MVC.MainMVCActivity"/>
+        <activity android:name=".architectures.MVP.MainMVPActivity"/>
     </application>
 
 
