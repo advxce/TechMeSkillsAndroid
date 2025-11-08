@@ -36,6 +36,9 @@
 <!--        architecture-->
         <activity android:name=".architectures.MVC.MainMVCActivity"/>
         <activity android:name=".architectures.MVP.MainMVPActivity"/>
+
+        <activity android:name=".task3.HWTask3Activity"/>
+        <activity android:name=".task3.HWTask3NoGraphActivity"/>
     </application>
 
 
