@@ -36,6 +36,7 @@
 <!--        architecture-->
         <activity android:name=".architectures.MVC.MainMVCActivity"/>
         <activity android:name=".architectures.MVP.MainMVPActivity"/>
+        <activity android:name=".task4.Task4Activity"/>
     </application>
 
 

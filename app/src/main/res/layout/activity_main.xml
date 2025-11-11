@@ -52,6 +52,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="task3"/>
+    <Button
+        android:id="@+id/task4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="task4"/>
 
     <Button
         android:layout_width="wrap_content"
