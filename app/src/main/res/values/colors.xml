@@ -7,4 +7,6 @@
     <color name="onPrimary"> #fff</color>
     <color name="background"> #fff</color>
     <color name="onBackground"> #000</color>
+    <color name="onBackgroundTintCard">#F2F2F2</color>
+    <color name="onCardText">#454545</color>
 </resources>

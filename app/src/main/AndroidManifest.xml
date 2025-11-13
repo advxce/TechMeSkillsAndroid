@@ -36,6 +36,10 @@
 <!--        architecture-->
         <activity android:name=".architectures.MVC.MainMVCActivity"/>
         <activity android:name=".architectures.MVP.MainMVPActivity"/>
+
+        <activity android:name=".ListViewTestingActivity"/>
+
+        <activity android:name=".task5.Task5Activity"/>
     </application>
 
 
