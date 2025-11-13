@@ -54,6 +54,12 @@
         android:text="task3"/>
 
     <Button
+        android:id="@+id/task5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="task5"/>
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="go to MVC"
@@ -64,5 +70,10 @@
         android:layout_height="wrap_content"
         android:text="go to MVP"
         android:id="@+id/checkMVP"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="go to listTesting"
+        android:id="@+id/listTesting"/>
 
 </LinearLayout>

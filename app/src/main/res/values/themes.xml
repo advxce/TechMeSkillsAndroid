@@ -10,4 +10,12 @@
     </style>
 
     <style name="Theme.Testing" parent="Base.Theme.Testing" />
+
+    <style name="CardViewCustomStyle" parent="Base.Theme.Testing">
+        <item name="cardBackgroundColor">@color/onBackgroundTintCard</item>
+
+        <item name="cardCornerRadius">10dp</item>
+        <item name="cardElevation">3dp</item>
+
+    </style>
 </resources>
