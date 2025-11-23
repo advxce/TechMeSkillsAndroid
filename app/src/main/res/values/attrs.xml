@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BottomButtonsView">
+        <attr name="bottomPositiveButtonText" format="string"/>
+        <attr name="bottomPositiveBackgroundColor" format="color"/>
+        <attr name="bottomNegativeBackgroundColor" format="color"/>
+        <attr name="bottomNegativeButtonText" format="string"/>
+        <attr name="bottomProgressMode" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="TicTacToeFieldView">
+        <attr name="player1Color" format="color"/>
+        <attr name="player2Color" format="color"/>
+        <attr name="fieldColor" format="color"/>
+    </declare-styleable>
+
+
+    <attr name="defTicTacToeStyle" format="reference"/>
+</resources>
