@@ -47,11 +47,13 @@
         android:layout_height="wrap_content"
         android:text="task1"/>
 
+
     <Button
-        android:id="@+id/task3"
+        android:id="@+id/bottomBtnView"
         android:layout_width="wrap_content"
+        android:textAllCaps="false"
         android:layout_height="wrap_content"
-        android:text="task3"/>
+        android:text="toBottomBtnView"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -64,5 +66,27 @@
         android:layout_height="wrap_content"
         android:text="go to MVP"
         android:id="@+id/checkMVP"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="go to MVVM"
+        android:id="@+id/checkMVVM"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toRec"
+        android:text = "toRec"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/incCount"
+        android:text = "incCount"/>
+    <TextView
+        android:id="@+id/getCountTv"
+        android:text="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
