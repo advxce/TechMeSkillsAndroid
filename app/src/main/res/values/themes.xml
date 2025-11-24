@@ -7,7 +7,19 @@
         <item name="background">@color/background</item>
         <item name="colorOnBackground">@color/onBackground</item>
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="defTicTacToeStyle">@style/DefaultTicTacToe</item>
     </style>
 
     <style name="Theme.Testing" parent="Base.Theme.Testing" />
+
+    <style name="DefaultTicTacToe">
+        <item name="player1Color">#00bb00</item>
+        <item name="player2Color">#bb0000</item>
+        <item name="fieldColor">#fbfbfb</item>
+    </style>
+
+    <style name="GlobalTicTacToe">
+        <item name="player1Color">#00bb88</item>
+    </style>
+
 </resources>
