@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/getNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="getNotes"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addNotes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="addNotes"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/getNotes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/getNotes"
+        app:layout_constraintTop_toTopOf="@+id/getNotes" />
+
+    <Button
+        android:id="@+id/deleteNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="deleteNote"
+        android:textAllCaps="false"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/addNotes"
+        app:layout_constraintStart_toStartOf="@+id/addNotes"
+        app:layout_constraintTop_toTopOf="@+id/getNotes"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <Button
+        android:id="@+id/editNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="editNote"
+        app:layout_constraintBottom_toBottomOf="@+id/deleteNote"
+        app:layout_constraintEnd_toEndOf="@+id/getNotes"
+        app:layout_constraintStart_toStartOf="@+id/getNotes"
+        app:layout_constraintTop_toTopOf="@+id/deleteNote" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
