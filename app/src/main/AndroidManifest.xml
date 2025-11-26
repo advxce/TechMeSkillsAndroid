@@ -6,6 +6,7 @@
 
     <application
         android:allowBackup="true"
+        android:name=".task7.Task7Application"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -36,6 +37,9 @@
 <!--        architecture-->
         <activity android:name=".architectures.MVC.MainMVCActivity"/>
         <activity android:name=".architectures.MVP.MainMVPActivity"/>
+
+        <activity android:name=".ListViewTestingActivity"/>
+        <activity android:name=".task7.cleanArchitecture.presentation.view.KeepNoteActivity"/>
     </application>
 
 
