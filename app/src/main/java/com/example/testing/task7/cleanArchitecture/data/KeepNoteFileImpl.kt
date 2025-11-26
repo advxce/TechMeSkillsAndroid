@@ -3,14 +3,18 @@ package com.example.testing.task7.cleanArchitecture.data
 import android.content.Context
 import android.util.Log
 import com.example.testing.task7.cleanArchitecture.data.entities.KeepNoteMemoryData
+import com.example.testing.task7.cleanArchitecture.data.entities.toData
+import com.example.testing.task7.cleanArchitecture.data.entities.toDomain
+import com.example.testing.task7.cleanArchitecture.domain.KeepNoteFile
+import com.example.testing.task7.cleanArchitecture.domain.entity.KeepNoteDomain
 import kotlinx.serialization.json.Json
 
 import java.io.File
 
-class KeepNoteFile(private val context: Context) {
+class KeepNoteFileImpl(private val context: Context): KeepNoteFile {
 
 
-    fun createFileToSaveNotes(fileName: String): File {
+    override fun createFileToSaveNotes(fileName: String): File {
         val file = File(context.filesDir, fileName)
         if (!file.exists()) {
             file.createNewFile()
@@ -19,28 +23,28 @@ class KeepNoteFile(private val context: Context) {
         return file
     }
 
-    fun writeAllKeepNotes(list: List<KeepNoteMemoryData>, fileName: String): File {
+    override fun writeAllKeepNotes(list: List<KeepNoteDomain>, fileName: String): File {
         val file = createFileToSaveNotes(fileName)
-        val jsonString = Json.encodeToString(list)
+        val jsonString = Json.encodeToString(list.map { it.toData() })
         file.writeText(jsonString)
         return file
 
     }
 
-    fun editKeepNote(newNote: KeepNoteMemoryData, fileName: String) {
+    override fun editKeepNote(newNote: KeepNoteDomain, fileName: String) {
         val notes = getAllKeepNotes(fileName).toMutableList()
         val index = notes.indexOfFirst { it.id == newNote.id }
 
         if (index != -1) {
             val currentNote = notes[index]
-            notes[index] = newNote.copy(id = currentNote.id, title = currentNote.title + 1)
+            notes[index] = newNote.copy(id = currentNote.id)
             writeAllKeepNotes(notes, fileName)
         }
 
     }
 
 
-    fun addKeepNote(newNote: KeepNoteMemoryData, fileName: String) {
+    override fun addKeepNote(newNote: KeepNoteDomain, fileName: String) {
         val notes = getAllKeepNotes(fileName).toMutableList()
 
 
@@ -48,21 +52,21 @@ class KeepNoteFile(private val context: Context) {
         writeAllKeepNotes(notes, fileName)
     }
 
-    fun getAllKeepNotes(fileName: String): List<KeepNoteMemoryData> {
+    override fun getAllKeepNotes(fileName: String): List<KeepNoteDomain> {
         val file = createFileToSaveNotes(fileName)
-        if (file.exists()) {
-
-            val jsonString = file.readText()
-            val list = Json.decodeFromString<List<KeepNoteMemoryData>>(jsonString)
-            return list
-
-        } else {
-            Log.i("CheckFile", "File not created")
+        val jsonString = file.readText()
+        if (jsonString.isBlank()) {
+            Log.i("KeepNoteFile", "File is empty, returning empty list")
             return emptyList()
+        }else{
+
+            val list = Json.decodeFromString<List<KeepNoteMemoryData>>(jsonString)
+            return list.map { it.toDomain() }
+
         }
     }
 
-    fun deleteKeepNote(noteId: Int, fileName: String) {
+    override fun deleteKeepNote(noteId: Int, fileName: String) {
         val notes = getAllKeepNotes(fileName)
         val newList = notes.filterNot { it.id == noteId }
         writeAllKeepNotes(newList, fileName)

@@ -1,6 +1,5 @@
-package com.example.testing.task7.cleanArchitecture.domain
+package com.example.testing.task7.cleanArchitecture.domain.repository
 
-import com.example.testing.task7.cleanArchitecture.data.entities.KeepNoteMemoryData
 import com.example.testing.task7.cleanArchitecture.domain.entity.KeepNoteDomain
 
 interface KeepNoteRepository {
