@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/firstContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/goToBrowser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="go to browser"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/toTask3SecActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="To task3SecActivity"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/goToBrowser" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstContainer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+
+        <Button
+            android:id="@+id/addFragments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="addFragments"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toTask3SecActivity" />
+
+        <Button
+            android:layout_marginLeft="8dp"
+            android:id="@+id/replaceFragments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="replaceFragments"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/addFragments" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/thirdContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/secondContainer"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toHWTask3"
+            android:text="toHWTask3"
+
+            />
+        <Button
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toHWTask3NoGraph"
+            android:text="toHWTask3NoGraph"
+            app:layout_constraintTop_toBottomOf="@id/secondContainer"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+    </LinearLayout>
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thirdContainer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
